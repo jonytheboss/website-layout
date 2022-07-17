@@ -7,8 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive file</title>
     <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
 
+        .food {
+            border: 2px solid yellow;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+        }
 
+        .food img {
+            width: 75%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .food {
+                background-color: brown;
+                color: white;
+            }
+        }
+
+        @media screen and (min-width: 577px) and (max-width: 992px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .food {
+                background-color: gold;
+            }
+        }
     </style>
 </head>
 
@@ -20,6 +55,7 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis quia incidunt fuga voluptatum. Quia,
                 non, et numquam sapiente rerum eaque possimus aliquam ex voluptates consectetur facilis qui earum culpa
                 pariatur.</p>
+            <button>Order now</button>
         </div>
         <div class="food">
             <img src="images/healthy-foods.webp" alt="">
@@ -27,6 +63,7 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum, cupiditate omnis rerum totam
                 repudiandae quibusdam aperiam sint maiores in debitis perferendis non ratione, repellendus nesciunt,
                 illum vitae labore perspiciatis.</p>
+            <button>Order now</button>
         </div>
         <div class="food">
             <img src="images/healthy-foods.webp" alt="">
@@ -34,6 +71,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quam, labore aut accusamus vel aperiam,
                 magnam maiores eos molestiae impedit sint alias repellendus reiciendis, corporis quae provident
                 obcaecati tenetur? Eius!</p>
+            <button>Order now</button>
         </div>
         <div class="food">
             <img src="images/healthy-foods.webp" alt="">
@@ -41,6 +79,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae distinctio, sed reiciendis eos omnis
                 libero asperiores laborum odio id itaque placeat hic voluptate debitis quae illum nihil iste dicta?
                 Ratione.</p>
+            <button>Order now</button>
         </div>
         <div class="food">
             <img src="images/healthy-foods.webp" alt="">
@@ -48,6 +87,7 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, eius libero. Rerum magni, suscipit
                 eligendi aut laudantium mollitia doloremque sunt eos inventore aliquid quisquam vero perspiciatis non
                 maxime ex provident?</p>
+            <button>Order now</button>
         </div>
         <div class="food">
             <img src="images/healthy-foods.webp" alt="">
@@ -55,6 +95,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aliquam culpa accusantium nihil
                 provident, corrupti quasi at nobis eius quisquam praesentium harum, animi, sed magnam! Alias quos
                 voluptate ea magnam!</p>
+            <button>Order now</button>
         </div>
         <div class="food">
             <img src="images/healthy-foods.webp" alt="">
@@ -62,6 +103,7 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores sed facere nostrum sunt deserunt
                 repellendus possimus omnis doloremque molestias voluptatum odio maiores dicta, quibusdam, tempore
                 obcaecati cupiditate. A, saepe laudantium!</p>
+            <button>Order now</button>
         </div>
         <div class="food">
             <img src="images/healthy-foods.webp" alt="">
@@ -69,6 +111,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, soluta, id at cumque officia autem
                 quasi inventore eaque sunt asperiores est debitis optio esse. Veniam natus iure iusto ex voluptatibus.
             </p>
+            <button>Order now</button>
         </div>
         <div class="food">
             <img src="images/healthy-foods.webp" alt="">
@@ -76,6 +119,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime ipsa, aliquid sit molestiae aut
                 officiis ea neque vitae consequuntur ullam labore amet nihil magni id aliquam, adipisci, consequatur
                 nulla!</p>
+            <button>Order now</button>
         </div>
         <div class="food">
             <img src="images/healthy-foods.webp" alt="">
@@ -83,6 +127,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, error mollitia doloribus accusantium
                 cumque totam enim quo eius cum? Delectus officiis amet, incidunt exercitationem perferendis ipsa.
                 Corrupti facilis minima omnis.</p>
+            <button>Order now</button>
         </div>
         <div class="food">
             <img src="images/healthy-foods.webp" alt="">
@@ -90,6 +135,7 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto veritatis assumenda minima.
                 Vel maiores necessitatibus perferendis, totam ipsam culpa dolorem in facere similique qui, placeat
                 molestiae rem cupiditate ipsa?</p>
+            <button>Order now</button>
         </div>
         <div class="food">
             <img src="images/healthy-foods.webp" alt="">
@@ -97,6 +143,7 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam fuga beatae temporibus libero omnis
                 vitae minus dolor corporis. Ducimus laudantium tempore perferendis. Consequuntur minima quas cum
                 obcaecati deleniti dolor perspiciatis.</p>
+            <button>Order now</button>
         </div>
     </div>
 </body>

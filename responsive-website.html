@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website file</title>
+
+    <style>
+        @media screen and (max-width: 576px) {
+            .container-two {
+                flex-direction: column;
+            }
+
+            .container-two .split {
+                width: 100%;
+
+            }
+        }
+
+        body {
+            border: 1px solid purple;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 10vw;
+        }
+
+        .black-penther img {
+            width: 100%;
+        }
+
+        .container-two {
+            display: flex;
+        }
+
+        .container-two .split {
+            width: 50%;
+        }
+
+        .split img {
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--
+1. viewport meta tag.
+2. css Relative uiit (vw)
+3. responsive Image (fluid image)
+4. body max-with and margin auto
+5. Responsive split screen using flex (2 column section)
+6. grid responsive (multi column)
+7. resopnsive manu (bootstap see) future
+-->
+
+    <section>
+        <h1>Responsive Website file</h1>
+    </section>
+    <section class="black-penther">
+        <h2>Black penther</h2>
+        <img src="images/black-penther.jpg" alt="">
+    </section>
+    <section>
+        <h2>Two Parts</h2>
+        <div class="container-two">
+            <div class="split">
+                <img src="images/food.webp" alt="">
+            </div>
+            <div class="split">
+                <img src="images/food.webp" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
